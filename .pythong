@@ -1,0 +1,29 @@
+author: Kaahan Radia & Vatsal Ojha
+bin_dir: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/bin
+classifiers: []
+description: y
+directories: [/Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation, /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/bin,
+  /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/tests, /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/docs,
+  /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/evolutionsimulation]
+docs_dir: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/docs
+email: futileeffortprojects@gmail.com
+encoding: y
+files: [/Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/MANIFEST.in,
+  /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/setup.py, /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/evolutionsimulation/__init__.py,
+  /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/tests/__init__.py,
+  /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/tests/evolutionsimulation_tests.py]
+init_file: null
+keywords: ['']
+license: Creative Commons
+manifest: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/MANIFEST.in
+name: evolutionsimulation
+project_dir: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation
+requires: ['']
+setup_file: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/setup.py
+shortname: y
+source_dir: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/evolutionsimulation
+test_file: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/tests/evolutionsimulation_tests.py
+test_init_file: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/tests/__init__.py
+tests_dir: /Users/Kaahan/Documents/evolutionsimulation/evolutionsimulation/tests
+url: https://github.com/Kaahan/evolutionsimulation
+version: y

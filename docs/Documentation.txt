@@ -1,0 +1,35 @@
+3D Printer Project for Calculus BC:
+Name: Vatsal Ojha, Isaac Yoon, Rahul J., Sai Attaluri
+Date Started: 5/11/16
+
+Purpose: To try and generate GCode to form a solid of a graph rotated around either the x-axis or the y-axis
+
+Execution:
+1. Uses Sympy Library to let user hard-code in function for revolution
+2. GUI allows user to choose the axis of revolution and bounds of revolution
+3. Sets starting (x, y, z) point
+4. Sets delta x/delta y as 0.1 for an x axis revolution and y axis revolution
+5. For loop to generate 36 equally spaced out points along a circle for each x/y value for the respective revolutions
+	5a. This is done using the sine and cosine of the angle of rotation multiplied by the function value at the given x/y value
+	5b. Done in 10 degree increments
+	5c. Each x, y, z value of all these points is added to their respective arrays
+6. Code chooses which side of the graph is larger for printing purposes
+	6a. Prints the code from the larger side first so the object does not topple over
+7. The GCode is generated using the array for each variable and simply printing those numbers in the GCode syntax to a separate file
+
+Bugs/Issues:
+1. Can't simulate what GCode will look like before printing it
+2. Multiple instances of forgetting to square the function in the intergral when testing for volume accuracy
+Libraries Used:
+1. Sympy
+2. Numpy
+3. Pillow
+4. EasyGUI
+5. Math
+Tests:
+1. Created a volume test for the graph to make sure the points are actually accurate
+	1a. Test worked for both x/y axis revolutions
+	1b. All tests have given volumes of 2-6% less than real volume, which is expected
+
+Results:
+TBD
