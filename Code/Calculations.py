@@ -5,10 +5,10 @@ from sympy.solvers import solve
 from sympy import Symbol, Function
 import GUI as gui
 import math
-GCodeFile = open('C:\\CalcPrintProj\\docs\\Sample.txt', 'w+')
+GCodeFile = open('C:\\3D Printer Calculus Project\\docs\\Sample.txt', 'w+')
 x = Symbol('x')
 f = Function('f')(x)
-f = 2*x
+f = 0.5*x
 xVals = []
 yVals = []
 zVals = []
@@ -94,12 +94,12 @@ if AxisChoice == "X-axis":
 												Side = math.sqrt(DeltaY * DeltaY + DeltaZ * DeltaZ)
 												SideArray.append(Side)
 
-	if yVals[len(yVals) - 1] > yVals[0]:
+	if yVals[len(yVals) - 1] < yVals[0]:
 		for i in range (1,len(yVals)):
 			GCodeLine1 = 'G1 X%1.4f' %(zVals[i-1] + 100)
 			GCodeLine2 = ' Y%1.4f' %(yVals[i-1] + 100)
-			GCodeLine3 = ' Z%1.4f F150' %xVals[i-1]
-			GCodeLine4 = ' E%1.4f' %(SideArray[i-1]/225)
+			GCodeLine3 = ' Z%1.4f F1500' %xVals[i-1]
+			GCodeLine4 = ' E%1.4f' %(SideArray[i-1]/2.25)
 			GCodeFile.write(GCodeLine1)
 			GCodeFile.write(GCodeLine2)
 			GCodeFile.write(GCodeLine3)
@@ -109,8 +109,8 @@ if AxisChoice == "X-axis":
 		for i in range (1,len(yVals)):
 			GCodeLine1 = 'G1 X%1.4f' %(zVals[len(zVals)-(i+1)] + 100)
 			GCodeLine2 = ' Y%1.4f' %(yVals[len(yVals)-(i+1)] + 100)
-			GCodeLine3 = ' Z%1.4f F1000' %(xVals[len(xVals)-(i+1)])
-			GCodeLine4 = ' E%1.4f' %(SideArray[i-1]/225)
+			GCodeLine3 = ' Z%1.4f F1000' %(xVals[i-1])
+			GCodeLine4 = ' E%1.4f' %(SideArray[i-1]/2.25)
 			GCodeFile.write(GCodeLine1)
 			GCodeFile.write(GCodeLine2)
 			GCodeFile.write(GCodeLine3)
