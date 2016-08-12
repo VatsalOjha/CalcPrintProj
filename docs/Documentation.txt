@@ -1,5 +1,5 @@
 3D Printer Project for Calculus BC:
-Name: Vatsal Ojha, Isaac Yoon, Rahul J., Sai Attaluri
+Name: Vatsal Ojha
 Date Started: 5/11/16
 
 Purpose: To try and generate GCode to form a solid of a graph rotated around either the x-axis or the y-axis
